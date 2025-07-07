@@ -1,0 +1,27 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract LuckyNumber {
+    string public greeting = "Welcome to my smart contract!";
+    uint public luckyNumber;
+
+    // Set the lucky number
+    function setLuckyNumber(uint _number) public {
+        luckyNumber = _number;
+    }
+
+    // Get the current lucky number
+    function getLuckyNumber() public view returns (uint) {
+        return luckyNumber;
+    }
+
+    // Return double the lucky number
+    function doubleIt() public view returns (uint) {
+        return luckyNumber * 2;
+    }
+
+    // Change the greeting message
+    function setGreeting(string memory _greet) public {
+        greeting = _greet;
+    }
+}
